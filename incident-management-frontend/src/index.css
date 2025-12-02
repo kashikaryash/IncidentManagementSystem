@@ -1,1 +1,5 @@
-@import "tailwindcss";
+/* Must be at the top of your global CSS file (e.g., index.css or App.css) */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
