@@ -1,5 +1,5 @@
-/* Must be at the top of your global CSS file (e.g., index.css or App.css) */
+/* src/index.css */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss"; 
+
+/* You can add any custom CSS or imports below this line */
