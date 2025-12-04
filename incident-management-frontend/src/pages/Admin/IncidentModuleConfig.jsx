@@ -27,7 +27,7 @@ const IncidentModuleConfig = () => {
     useEffect(() => {
         const fetchConfig = async () => {
             try {
-                const res = await fetch("http://localhost:8080/api/config/getConfig", {
+                const res = await fetch("incidentmanagementsystem-backend.railway.internal/api/config/getConfig", {
                     credentials: "include",
                 });
                 if (!res.ok) throw new Error("Failed to load config");
@@ -97,7 +97,7 @@ const IncidentModuleConfig = () => {
         };
 
         try {
-            const res = await fetch("http://localhost:8080/api/config/update", {
+            const res = await fetch("incidentmanagementsystem-backend.railway.internal/api/config/update", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

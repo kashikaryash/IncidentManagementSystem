@@ -66,22 +66,22 @@ const AllIncidentsPage = () => {
                 classifications, categories,
                 workgroups, analysts, pendingReasons, resolutionCodes, closureCodes
             ] = await Promise.all([
-                // Priorities: API endpoint confirmed (http://localhost:8080/api/priorities)
-                axios.get('http://localhost:8080/api/admin/priorities'),
-                // axios.get('http://localhost:8080/api/impacts'),
-                // axios.get('http://localhost:8080/api/urgencies'),
-                axios.get('http://localhost:8080/api/classifications'),
+                // Priorities: API endpoint confirmed (incidentmanagementsystem-backend.railway.internal/api/priorities)
+                axios.get('incidentmanagementsystem-backend.railway.internal/api/admin/priorities'),
+                // axios.get('incidentmanagementsystem-backend.railway.internal/api/impacts'),
+                // axios.get('incidentmanagementsystem-backend.railway.internal/api/urgencies'),
+                axios.get('incidentmanagementsystem-backend.railway.internal/api/classifications'),
                 
                 // 🌟 UPDATED: Categories endpoint to /api/categories/all
-                axios.get('http://localhost:8080/api/categories/all'), 
+                axios.get('incidentmanagementsystem-backend.railway.internal/api/categories/all'), 
                 
-                axios.get('http://localhost:8080/api/workgroups'),
+                axios.get('incidentmanagementsystem-backend.railway.internal/api/workgroups'),
                 
-                axios.get('http://localhost:8080/api/users/analysts'),
+                axios.get('incidentmanagementsystem-backend.railway.internal/api/users/analysts'),
                 
-                axios.get('http://localhost:8080/api/pending-reasons'),
-                axios.get('http://localhost:8080/api/resolution-codes'),
-                axios.get('http://localhost:8080/api/admin/closure-codes'),
+                axios.get('incidentmanagementsystem-backend.railway.internal/api/pending-reasons'),
+                axios.get('incidentmanagementsystem-backend.railway.internal/api/resolution-codes'),
+                axios.get('incidentmanagementsystem-backend.railway.internal/api/admin/closure-codes'),
             ]);
             setDropdowns({
                 priorities: priorities.data, 
@@ -99,7 +99,7 @@ const AllIncidentsPage = () => {
     const fetchIncidents = async () => {
         try {
             const res = await axios.get(
-                "http://localhost:8080/api/admin/incidents/all",
+                "incidentmanagementsystem-backend.railway.internal/api/admin/incidents/all",
                 { withCredentials: true }
             );
             setIncidents(res.data);
@@ -117,7 +117,7 @@ const AllIncidentsPage = () => {
 
         try {
             await axios.delete(
-                `http://localhost:8080/api/incidents/${id}`,
+                `incidentmanagementsystem-backend.railway.internal/api/incidents/${id}`,
                 { withCredentials: true }
             );
             alert("Incident deleted successfully!");
@@ -217,7 +217,7 @@ const AllIncidentsPage = () => {
             }, {});
 
             await axios.put(
-                `http://localhost:8080/api/admin/incidents/${editingIncident.id}`,
+                `incidentmanagementsystem-backend.railway.internal/api/admin/incidents/${editingIncident.id}`,
                 payload,
                 { withCredentials: true }
             );

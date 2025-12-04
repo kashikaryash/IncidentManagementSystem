@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:8080/api/users";
+const API_BASE_URL = "incidentmanagementsystem-backend.railway.internal/api/users";
 
 export const createUser = async (userData) => {
   try {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/resolution-codes";
+const API_URL = "incidentmanagementsystem-backend.railway.internal/api/resolution-codes";
 
 const ResolutionCodePage = () => {
   const [codes, setCodes] = useState([]);

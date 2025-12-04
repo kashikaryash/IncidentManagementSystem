@@ -255,7 +255,7 @@ const ClassificationPage = () => {
     const fetchClassifications = async () => {
         try {
             setLoading(true);
-            const res = await axios.get("http://localhost:8080/api/classifications");
+            const res = await axios.get("incidentmanagementsystem-backend.railway.internal/api/classifications");
             // Apply the current sort method after fetching
             setClassifications(applySort(res.data, sortBy)); 
             setError(null);
@@ -283,7 +283,7 @@ const ClassificationPage = () => {
     // --- Core Action: Toggle Active Status (Unchanged) ---
     const handleToggleActive = async (id) => {
         try {
-            const res = await axios.patch(`http://localhost:8080/api/classifications/${id}/toggle-active`);
+            const res = await axios.patch(`incidentmanagementsystem-backend.railway.internal/api/classifications/${id}/toggle-active`);
             
             // Update the local state and re-sort the new list immediately
             setClassifications(prev => 

@@ -2,7 +2,7 @@ import axios from "axios";
 
 axios.defaults.withCredentials = true;
 
-const API_BASE = "http://localhost:8080/api/incidents/enduser";
+const API_BASE = "incidentmanagementsystem-backend.railway.internal/api/incidents/enduser";
 
 export const createEndUserIncident = async (incidentData, attachments = []) => {
     const formData = new FormData();

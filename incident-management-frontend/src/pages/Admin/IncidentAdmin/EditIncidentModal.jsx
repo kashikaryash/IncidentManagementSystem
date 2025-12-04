@@ -52,19 +52,19 @@ const EditIncidentModal = ({ incident, onClose, onUpdateSuccess }) => {
         priorities, impacts, urgencies, classifications, categories,
         workgroups, analysts, pendingReasons, resolutionCodes, closureCodes
       ] = await Promise.all([
-        axios.get('http://localhost:8080/api/admin/priorities'),
-        axios.get('http://localhost:8080/api/impacts'),
-        axios.get('http://localhost:8080/api/urgencies'),
-        axios.get('http://localhost:8080/api/classifications'),
-        axios.get('http://localhost:8080/api/categories'),
-        axios.get('http://localhost:8080/api/workgroups'),
+        axios.get('incidentmanagementsystem-backend.railway.internal/api/admin/priorities'),
+        axios.get('incidentmanagementsystem-backend.railway.internal/api/impacts'),
+        axios.get('incidentmanagementsystem-backend.railway.internal/api/urgencies'),
+        axios.get('incidentmanagementsystem-backend.railway.internal/api/classifications'),
+        axios.get('incidentmanagementsystem-backend.railway.internal/api/categories'),
+        axios.get('incidentmanagementsystem-backend.railway.internal/api/workgroups'),
 
         // ✅ Updated: Only load analysts
-        axios.get('http://localhost:8080/api/users/Analysts'),
+        axios.get('incidentmanagementsystem-backend.railway.internal/api/users/Analysts'),
 
-        axios.get('http://localhost:8080/api/pending-reasons'),
-        axios.get('http://localhost:8080/api/resolution-codes'),
-        axios.get('http://localhost:8080/api/admin/closure-codes'),
+        axios.get('incidentmanagementsystem-backend.railway.internal/api/pending-reasons'),
+        axios.get('incidentmanagementsystem-backend.railway.internal/api/resolution-codes'),
+        axios.get('incidentmanagementsystem-backend.railway.internal/api/admin/closure-codes'),
       ]);
 
       setDropdowns({
@@ -129,7 +129,7 @@ const EditIncidentModal = ({ incident, onClose, onUpdateSuccess }) => {
       };
 
       await axios.put(
-        `http://localhost:8080/api/admin/incidents/${formData.id}`,
+        `incidentmanagementsystem-backend.railway.internal/api/admin/incidents/${formData.id}`,
         updatePayload,
         { withCredentials: true }
       );

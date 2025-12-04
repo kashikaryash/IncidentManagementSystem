@@ -25,7 +25,7 @@ const LogIncident = () => {
     useEffect(() => {
         const fetchUser = async () => {
             try {
-                const res = await fetch("http://localhost:8080/api/users/me", {
+                const res = await fetch("incidentmanagementsystem-backend.railway.internal/api/users/me", {
                     credentials: "include",
                 });
 
@@ -55,7 +55,7 @@ const LogIncident = () => {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const res = await fetch("http://localhost:8080/api/categories/tree", {
+                const res = await fetch("incidentmanagementsystem-backend.railway.internal/api/categories/tree", {
                     credentials: "include",
                 });
 

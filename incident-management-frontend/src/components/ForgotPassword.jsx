@@ -13,7 +13,7 @@ const ForgotPassword = () => {
       setMessage("");
       setError("");
 
-      await axios.post("http://localhost:8080/api/users/forgot-password", null, {
+      await axios.post("incidentmanagementsystem-backend.railway.internal/api/users/forgot-password", null, {
         params: { email },
       });
 

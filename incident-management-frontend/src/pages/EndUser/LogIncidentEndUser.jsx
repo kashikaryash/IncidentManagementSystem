@@ -63,7 +63,7 @@ const LogIncidentEndUser = ({ userEmail, userName, username, onIncidentSubmitted
   useEffect(() => {
     const loadCategories = async () => {
       try {
-        const res = await fetch("http://localhost:8080/api/categories/tree", {
+        const res = await fetch("incidentmanagementsystem-backend.railway.internal/api/categories/tree", {
           credentials: "include",
         });
         if (!res.ok) throw new Error("Unable to load categories");

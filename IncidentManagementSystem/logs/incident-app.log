@@ -2910,34 +2910,34 @@ This generated password is for development use only. Your security configuration
 2025-12-01T18:29:35.908+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/incidents/create-with-files
 2025-12-01T18:29:36.051+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
 2025-12-01T18:29:36.051+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id A4155155E828BC849852E64A4E4FB509
-2025-12-01T18:29:36.067+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-1] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2025-12-01T18:29:36.067+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-1] o.s.s.web.DefaultRedirectStrategy        : Redirecting to incidentmanagementsystem-backend.railway.internal/login
 2025-12-01T18:29:36.114+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /login
 2025-12-01T18:31:56.762+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/incidents/create-with-files
 2025-12-01T18:31:56.766+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
 2025-12-01T18:31:56.766+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-4] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id A4155155E828BC849852E64A4E4FB509
-2025-12-01T18:31:56.768+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-4] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2025-12-01T18:31:56.768+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-4] o.s.s.web.DefaultRedirectStrategy        : Redirecting to incidentmanagementsystem-backend.railway.internal/login
 2025-12-01T18:31:56.790+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /login
 2025-12-01T18:33:03.961+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/users/me
 2025-12-01T18:33:03.963+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
 2025-12-01T18:33:03.965+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-7] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id A4155155E828BC849852E64A4E4FB509
-2025-12-01T18:33:03.968+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-7] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2025-12-01T18:33:03.968+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-7] o.s.s.web.DefaultRedirectStrategy        : Redirecting to incidentmanagementsystem-backend.railway.internal/login
 2025-12-01T18:33:03.981+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/users/me
 2025-12-01T18:33:03.981+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
 2025-12-01T18:33:03.981+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-8] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id A4155155E828BC849852E64A4E4FB509
-2025-12-01T18:33:03.985+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-8] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2025-12-01T18:33:03.985+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-8] o.s.s.web.DefaultRedirectStrategy        : Redirecting to incidentmanagementsystem-backend.railway.internal/login
 2025-12-01T18:33:04.354+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /login
 2025-12-01T18:33:04.364+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /login
 2025-12-01T18:33:13.270+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/users/login
 2025-12-01T18:33:13.286+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/users/login
 2025-12-01T18:33:13.286+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
 2025-12-01T18:33:13.286+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-5] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id A4155155E828BC849852E64A4E4FB509
-2025-12-01T18:33:13.286+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-5] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2025-12-01T18:33:13.286+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-5] o.s.s.web.DefaultRedirectStrategy        : Redirecting to incidentmanagementsystem-backend.railway.internal/login
 2025-12-01T18:33:13.299+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /login
 2025-12-01T18:33:20.197+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/users/login
 2025-12-01T18:33:20.202+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/users/login
 2025-12-01T18:33:20.202+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
 2025-12-01T18:33:20.202+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-6] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id A4155155E828BC849852E64A4E4FB509
-2025-12-01T18:33:20.209+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-6] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2025-12-01T18:33:20.209+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-6] o.s.s.web.DefaultRedirectStrategy        : Redirecting to incidentmanagementsystem-backend.railway.internal/login
 2025-12-01T18:33:20.215+05:30 DEBUG 9740 --- [IncidentManagementSystem] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /login
 2025-12-01T18:33:43.985+05:30  INFO 9740 --- [IncidentManagementSystem] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
 2025-12-01T18:33:43.994+05:30  INFO 9740 --- [IncidentManagementSystem] [RMI TCP Connection(9)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
@@ -3415,7 +3415,7 @@ This generated password is for development use only. Your security configuration
 2025-12-01T19:21:50.789+05:30 DEBUG 2872 --- [IncidentManagementSystem] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/incidents/approaching-sla
 2025-12-01T19:21:50.791+05:30 DEBUG 2872 --- [IncidentManagementSystem] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/incidents/approaching-sla
 2025-12-01T19:22:04.078+05:30 DEBUG 2872 --- [IncidentManagementSystem] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /
-2025-12-01T19:22:04.091+05:30 DEBUG 2872 --- [IncidentManagementSystem] [http-nio-8080-exec-8] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/?continue to session
+2025-12-01T19:22:04.091+05:30 DEBUG 2872 --- [IncidentManagementSystem] [http-nio-8080-exec-8] o.s.s.w.s.HttpSessionRequestCache        : Saved request incidentmanagementsystem-backend.railway.internal/?continue to session
 2025-12-01T19:22:04.091+05:30 DEBUG 2872 --- [IncidentManagementSystem] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /error
 2025-12-01T19:22:04.091+05:30 DEBUG 2872 --- [IncidentManagementSystem] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /error
 2025-12-01T19:22:04.385+05:30 DEBUG 2872 --- [IncidentManagementSystem] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico

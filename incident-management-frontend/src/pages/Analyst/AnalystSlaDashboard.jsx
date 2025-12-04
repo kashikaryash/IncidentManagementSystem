@@ -18,7 +18,7 @@ const AnalystSlaDashboard = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/incidents/approaching-sla", {
+    fetch("incidentmanagementsystem-backend.railway.internal/api/incidents/approaching-sla", {
       credentials: "include",
     })
       .then((response) => {
